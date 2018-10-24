@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="com.ian-1.1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_ian_1_1_jar</output-path>
+    <root id="archive" name="com.ian.jar">
+      <element id="module-output" name="com.ian" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -16,7 +16,7 @@ public class Log {
     /**
      * default log name
      */
-    private final String LOG_NAME = Util.getCurrentDate("yyyyMMdd");
+    private final String LOG_NAME = Date.getCurrentDate("yyyyMMdd");
 
     private String userDefinedDir = "";
 
@@ -103,7 +103,7 @@ public class Log {
      * @return String
      */
     private String getFormatedLog(String message) {
-        String date = Util.getCurrentDate("yyyyMMdd");
+        String date = Date.getCurrentDate("yyyyMMdd hh:mm:ss");
         return "[" + date + "] " + message;
     }
 }

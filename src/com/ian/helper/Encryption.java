@@ -5,7 +5,9 @@ import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
+import javax.xml.bind.DatatypeConverter;
 import java.security.InvalidKeyException;
+import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class Encryption {
@@ -20,7 +22,7 @@ public class Encryption {
      * @param userInput user string
      * @return String
      */
-    public static String encrypt(String userInput) {
+    public static String encryptBlowfish(String userInput) {
         SecretKeySpec secretKeySpec = new SecretKeySpec(KEY.getBytes(), "BlowFish");
         try {
             Cipher cipher = Cipher.getInstance("Blowfish");
@@ -40,7 +42,7 @@ public class Encryption {
      * @param userInput user string
      * @return String
      */
-    public static String decrypt(String userInput) {
+    public static String decryptBlowfish(String userInput) {
         SecretKeySpec secretKeySpec = new SecretKeySpec(KEY.getBytes(), "Blowfish");
         try {
             Cipher cipher = Cipher.getInstance("Blowfish");
@@ -49,6 +51,26 @@ public class Encryption {
             return new String(decrypted);
         } catch (NoSuchAlgorithmException | InvalidKeyException | NoSuchPaddingException | IllegalBlockSizeException | BadPaddingException e) {
             e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    /**
+     * to genereate md5 in java
+     *
+     * @param userInput user input
+     * @return String
+     */
+    public static String md5(String userInput) {
+        if (userInput != null) {
+            try {
+                MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+                messageDigest.update(userInput.getBytes());
+                return DatatypeConverter.printHexBinary(messageDigest.digest()).toLowerCase();
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+            }
         }
 
         return null;
