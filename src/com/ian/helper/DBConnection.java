@@ -181,6 +181,27 @@ public class DBConnection {
     /**
      * get current connection
      *
+     * @param abstractConnection abstract connection
+     */
+    public void getCurrentConnection(AbstractConnection abstractConnection) {
+        getConnection(new AbstractConnection() {
+            @Override
+            public void onConnected(Connection mConnection) {
+                super.onConnected(mConnection);
+                abstractConnection.onConnected(mConnection);
+            }
+
+            @Override
+            public void onErrorConection(String message) {
+                super.onErrorConection(message);
+                abstractConnection.onErrorConection(message);
+            }
+        });
+    }
+
+    /**
+     * get current connection
+     *
      * @param abstractConnection connection
      */
     private void getConnection(AbstractConnection abstractConnection) {

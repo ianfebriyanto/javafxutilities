@@ -14,7 +14,7 @@ public class Encryption {
     /**
      * default key for encrypt
      */
-    private static final String KEY = "123*(#$%^@345@#66%&&$%2345%$dghdfFFW:{:]";
+    private static final String KEY = "8jHKlTM*()%$@$@#";
 
     /**
      * to encrypt string
@@ -25,7 +25,7 @@ public class Encryption {
     public static String encryptBlowfish(String userInput) {
         SecretKeySpec secretKeySpec = new SecretKeySpec(KEY.getBytes(), "BlowFish");
         try {
-            Cipher cipher = Cipher.getInstance("Blowfish");
+            Cipher cipher = Cipher.getInstance("BlowFish");
             cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
             byte[] encrypted = cipher.doFinal(userInput.getBytes());
             return new String(encrypted);
@@ -43,9 +43,9 @@ public class Encryption {
      * @return String
      */
     public static String decryptBlowfish(String userInput) {
-        SecretKeySpec secretKeySpec = new SecretKeySpec(KEY.getBytes(), "Blowfish");
+        SecretKeySpec secretKeySpec = new SecretKeySpec(KEY.getBytes(), "BlowFish");
         try {
-            Cipher cipher = Cipher.getInstance("Blowfish");
+            Cipher cipher = Cipher.getInstance("BlowFish");
             cipher.init(Cipher.DECRYPT_MODE, secretKeySpec);
             byte[] decrypted = cipher.doFinal(userInput.getBytes());
             return new String(decrypted);
@@ -57,7 +57,7 @@ public class Encryption {
     }
 
     /**
-     * to genereate md5 in java
+     * to generate md5 in java
      *
      * @param userInput user input
      * @return String
@@ -67,6 +67,27 @@ public class Encryption {
             try {
                 MessageDigest messageDigest = MessageDigest.getInstance("MD5");
                 messageDigest.update(userInput.getBytes());
+                return DatatypeConverter.printHexBinary(messageDigest.digest()).toLowerCase();
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return null;
+    }
+
+
+    /**
+     * to generate sha256 in java
+     *
+     * @param userInput user input
+     * @return Sring
+     */
+    public static String sha256(String userInput) {
+        if (userInput != null) {
+            try {
+                MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+                messageDigest.update(userInput.getBytes()); //StandardCharsets.UTF_8
                 return DatatypeConverter.printHexBinary(messageDigest.digest()).toLowerCase();
             } catch (NoSuchAlgorithmException e) {
                 e.printStackTrace();

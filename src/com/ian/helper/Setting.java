@@ -58,12 +58,21 @@ public class Setting {
         if (settingName != null) settingLocalPath = DEFAULT_DIR + "/" + settingName;
 
         Properties properties = new Properties();
+        InputStream mInputStream = null;
         try {
-            InputStream mInputStream = new FileInputStream(settingLocalPath);
+            mInputStream = new FileInputStream(settingLocalPath);
             properties.load(mInputStream);
             return properties;
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            if (mInputStream != null) {
+                try {
+                    mInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
 
         return null;

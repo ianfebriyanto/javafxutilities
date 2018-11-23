@@ -1,8 +1,12 @@
+/*
+ * Helper JAVAFX application
+ */
+
 package com.ian.helper;
 
 import java.io.*;
 
-public class Log {
+public class Logging {
     /**
      * Default current by user dir
      */
@@ -22,13 +26,19 @@ public class Log {
 
     private String userDefinedLogName = "";
 
+    private FileWriter fw;
+
+    private BufferedWriter bw;
+
+    private PrintWriter out;
+
     /**
      * to get instance
      *
      * @return instance
      */
-    public static Log create() {
-        return new Log();
+    public static Logging getInstance() {
+        return new Logging();
     }
 
     /**
@@ -37,7 +47,7 @@ public class Log {
      * @param userDefinedDir set user dir
      * @return instance
      */
-    public Log setDir(String userDefinedDir) {
+    public Logging setDir(String userDefinedDir) {
         this.userDefinedDir = userDefinedDir;
         return this;
     }
@@ -48,17 +58,17 @@ public class Log {
      * @param userDefinedLogName set user log name
      * @return instance
      */
-    public Log setLogName(String userDefinedLogName) {
+    public Logging setLogName(String userDefinedLogName) {
         this.userDefinedLogName = userDefinedLogName;
         return this;
     }
 
     /**
-     * set message to log
+     * get writer
      *
-     * @param message message to log
+     * @return
      */
-    public void setMessage(String message) {
+    public PrintWriter getWriter() {
         String logDir = LOG_DIR;
         String logName = LOG_NAME;
 
@@ -84,10 +94,32 @@ public class Log {
                 }
             }
 
-            FileWriter fw = new FileWriter(pathLogFile, true);
-            BufferedWriter bw = new BufferedWriter(fw);
-            PrintWriter out = new PrintWriter(bw);
-            out.println(getFormatedLog(message));
+            fw = new FileWriter(pathLogFile, true);
+            bw = new BufferedWriter(fw);
+            out = new PrintWriter(bw);
+            return out;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    /**
+     * set log message
+     *
+     * @param out     printer write
+     * @param message log message
+     */
+    public void setMessage(PrintWriter out, String message) {
+        out.println(getFormatedLog(message));
+    }
+
+    /**
+     * close write
+     */
+    public void closeWriter() {
+        try {
             out.close();
             bw.close();
             fw.close();
@@ -107,4 +139,3 @@ public class Log {
         return "[" + date + "] " + message;
     }
 }
-
