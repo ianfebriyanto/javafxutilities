@@ -7,13 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbed7360-43f4-41de-be8c-ebab1bb1bae3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ian/helper/Logging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ian/helper/WebService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ian/helper/Alert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ian/helper/Alert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ian/helper/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ian/helper/DBConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ian/helper/Encryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ian/helper/Encryption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ian/helper/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ian/helper/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ian/helper/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ian/helper/Setting.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,18 +23,19 @@
     <session id="1906126562">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
-          <entry key="project.open.time.0" value="9" />
-          <entry key="project.open.time.1" value="9" />
+          <entry key="project.closed" value="36" />
+          <entry key="project.open.time.0" value="10" />
+          <entry key="project.open.time.1" value="12" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -63,14 +60,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="19" />
-          <entry key="java" value="11360" />
+          <entry key="java" value="11849" />
           <entry key="md" value="117" />
           <entry key="txt" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11360" />
+          <entry key="JAVA" value="11849" />
           <entry key="PLAIN_TEXT" value="178" />
         </counts>
       </usages-collector>
@@ -78,11 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ian/helper/DBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2416">
-              <caret line="157" column="50" selection-start-line="157" selection-start-column="50" selection-end-line="157" selection-end-column="50" />
+            <state relative-caret-position="627">
+              <caret line="229" column="9" selection-start-line="229" selection-start-column="9" selection-end-line="229" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -90,17 +87,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ian/helper/Encryption.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+            <state relative-caret-position="400">
+              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ian/helper/Alert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="432">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -138,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ian/helper/Setting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="1344">
+              <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -177,16 +174,16 @@
         <option value="$PROJECT_DIR$/src/com/ian/helper/Progress.java" />
         <option value="$PROJECT_DIR$/src/com/ian/helper/Mail.java" />
         <option value="$PROJECT_DIR$/src/com/ian/helper/Log.java" />
-        <option value="$PROJECT_DIR$/src/com/ian/helper/Setting.java" />
-        <option value="$PROJECT_DIR$/src/com/ian/helper/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/com/ian/helper/WebService.java" />
         <option value="$PROJECT_DIR$/src/com/ian/helper/Logging.java" />
-        <option value="$PROJECT_DIR$/src/com/ian/helper/Encryption.java" />
         <option value="$PROJECT_DIR$/src/com/ian/helper/Alert.java" />
+        <option value="$PROJECT_DIR$/src/com/ian/helper/Encryption.java" />
+        <option value="$PROJECT_DIR$/src/com/ian/helper/DBConnection.java" />
+        <option value="$PROJECT_DIR$/src/com/ian/helper/Setting.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="1935" />
     <option name="height" value="1050" />
@@ -203,6 +200,24 @@
             <path>
               <item name="com.ian" type="b2602c69:ProjectViewProjectNode" />
               <item name="com.ian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.ian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.ian" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.ian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.ian" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.ian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.ian" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="com_ian_1_1_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com.ian" type="b2602c69:ProjectViewProjectNode" />
@@ -234,12 +249,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542193739803" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544425454569" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -277,10 +292,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1548" height="840" extended-state="0" />
-    <editor active="true" />
+    <frame x="762" y="0" width="781" height="838" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18212366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4147018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -294,7 +308,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25212464" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2503536" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
@@ -374,8 +388,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ian/helper/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2416">
-          <caret line="157" column="50" selection-start-line="157" selection-start-column="50" selection-end-line="157" selection-end-column="50" />
+        <state relative-caret-position="627">
+          <caret line="229" column="9" selection-start-line="229" selection-start-column="9" selection-end-line="229" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ian/helper/Encryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ian/helper/Alert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -405,22 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ian/helper/Setting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ian/helper/Encryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ian/helper/Alert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="1344">
+          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -62,12 +62,12 @@ public class Setting {
         try {
             mInputStream = new FileInputStream(settingLocalPath);
             properties.load(mInputStream);
-            return properties;
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             if (mInputStream != null) {
                 try {
+                    mInputStream.close();
                     mInputStream.close();
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -75,7 +75,7 @@ public class Setting {
             }
         }
 
-        return null;
+        return properties;
     }
 
     /**

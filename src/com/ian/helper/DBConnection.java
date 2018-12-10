@@ -230,6 +230,32 @@ public class DBConnection {
         }
     }
 
+    public Connection getConnection() throws SQLException, ClassNotFoundException {
+        if (dbConnection == DB_CONNECTION.SQL_SERVER) {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            return DriverManager.getConnection(generateConnectionUrl());
+        } else if (dbConnection == DB_CONNECTION.ORACLE) {
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            return DriverManager.getConnection(mConnectionUrl, username, password);
+        }
+
+        return null;
+    }
+
+    private String generateConnectionUrl() {
+        if (dbConnection == DB_CONNECTION.SQL_SERVER) {
+            if (useInstance) {
+                return "jdbc:sqlserver://" + host + ";" + "databaseName=" + dbName + ";user=" + username + ";password=" + password;
+            } else {
+                return "jdbc:sqlserver://" + host + ":" + port + ";" + "databaseName=" + dbName + ";user=" + username + ";password=" + password;
+            }
+        } else if (dbConnection == DB_CONNECTION.ORACLE) {
+            return "jdbc:oracle:thin:@" + host + ":" + port + ":" + dbName;
+        }
+
+        return null;
+    }
+
     /**
      * close connection
      */
