@@ -68,7 +68,6 @@ public class Setting {
             if (mInputStream != null) {
                 try {
                     mInputStream.close();
-                    mInputStream.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
